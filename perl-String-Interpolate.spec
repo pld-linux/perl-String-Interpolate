@@ -1,4 +1,7 @@
+#
+# Conditional build:
 %bcond_without	tests	 # don't perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	Interpolate
@@ -39,7 +42,8 @@ odwieczny problem Perla - jak wywo³aæ perlowy silnik interpoluj±cy
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
