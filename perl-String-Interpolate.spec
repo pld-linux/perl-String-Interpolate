@@ -10,7 +10,8 @@ Summary(pl):	String::Interpolate - obudowanie do wbudowanego w Perla silnika int
 Name:		perl-String-Interpolate
 Version:	0.2
 Release:	1
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8da264f3261422e32e118885be770943
