@@ -4,11 +4,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	Interpolate
-Summary:	String::Interpolate - Wrapper for builtin the Perl interpolatation engine.
-#Summary(pl):	
+Summary:	String::Interpolate - Wrapper for builtin the Perl interpolation engine
+Summary(pl):	String::Interpolate - obudowanie do wbudowanego w Perla silnika interpoluj±cego
 Name:		perl-String-Interpolate
 Version:	0.1
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,12 +18,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-C<String::Interpolate> provides a neat interface to the solution to
-that perenial Perl problem - how to invoke the Perl string interpolation
+String::Interpolate provides a neat interface to the solution to that
+perennial Perl problem - how to invoke the Perl string interpolation
 engine on a string contained in a scalar variable.
 
-# %description -l pl
-# TODO
+%description -l pl
+String::Interpolate udostêpnia mi³y interfejs rozwi±zuj±cy ten
+odwieczny problem Perla - jak wywo³aæ perlowy silnik interpoluj±cy
+³añcuchy na ³añcuchu zawartym w zmiennej skalarnej.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -31,6 +33,7 @@ engine on a string contained in a scalar variable.
 %build
 perl Makefile.PL
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
