@@ -8,13 +8,13 @@
 Summary:	String::Interpolate - wrapper for builtin the Perl interpolation engine
 Summary(pl):	String::Interpolate - obudowanie do wbudowanego w Perla silnika interpoluj±cego
 Name:		perl-String-Interpolate
-Version:	0.2
+Version:	0.3
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8da264f3261422e32e118885be770943
+# Source0-md5:	c3b2c9e5014084c040f24dcf53b8d17e
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
