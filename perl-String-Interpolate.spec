@@ -31,7 +31,7 @@ odwieczny problem Perla - jak wywo³aæ perlowy silnik interpoluj±cy
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
