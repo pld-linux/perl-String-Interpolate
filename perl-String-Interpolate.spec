@@ -3,8 +3,8 @@
 %bcond_without	tests	 # don't perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	String
-%define	pnam	Interpolate
+%define		pdir	String
+%define		pnam	Interpolate
 Summary:	String::Interpolate - wrapper for builtin the Perl interpolation engine
 Summary(pl):	String::Interpolate - obudowanie do wbudowanego w Perla silnika interpoluj±cego
 Name:		perl-String-Interpolate
