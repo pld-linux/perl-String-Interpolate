@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	Interpolate
-Summary:	String::Interpolate - Wrapper for builtin the Perl interpolation engine
+Summary:	String::Interpolate - wrapper for builtin the Perl interpolation engine
 Summary(pl):	String::Interpolate - obudowanie do wbudowanego w Perla silnika interpoluj±cego
 Name:		perl-String-Interpolate
 Version:	0.2
