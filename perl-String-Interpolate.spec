@@ -6,7 +6,7 @@
 %define		pdir	String
 %define		pnam	Interpolate
 Summary:	String::Interpolate - wrapper for builtin the Perl interpolation engine
-Summary(pl):	String::Interpolate - obudowanie do wbudowanego w Perla silnika interpoluj±cego
+Summary(pl.UTF-8):   String::Interpolate - obudowanie do wbudowanego w Perla silnika interpolujÄ…cego
 Name:		perl-String-Interpolate
 Version:	0.3
 Release:	1
@@ -25,10 +25,10 @@ String::Interpolate provides a neat interface to the solution to that
 perennial Perl problem - how to invoke the Perl string interpolation
 engine on a string contained in a scalar variable.
 
-%description -l pl
-String::Interpolate udostêpnia mi³y interfejs rozwi±zuj±cy ten
-odwieczny problem Perla - jak wywo³aæ perlowy silnik interpoluj±cy
-³añcuchy na ³añcuchu zawartym w zmiennej skalarnej.
+%description -l pl.UTF-8
+String::Interpolate udostÄ™pnia miÅ‚y interfejs rozwiÄ…zujÄ…cy ten
+odwieczny problem Perla - jak wywoÅ‚aÄ‡ perlowy silnik interpolujÄ…cy
+Å‚aÅ„cuchy na Å‚aÅ„cuchu zawartym w zmiennej skalarnej.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
