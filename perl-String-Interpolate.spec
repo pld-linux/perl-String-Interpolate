@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	 # don't perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	String
 %define		pnam	Interpolate
+%include	/usr/lib/rpm/macros.perl
 Summary:	String::Interpolate - wrapper for builtin the Perl interpolation engine
 Summary(pl.UTF-8):	String::Interpolate - obudowanie do wbudowanego w Perla silnika interpolującego
 Name:		perl-String-Interpolate
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c3b2c9e5014084c040f24dcf53b8d17e
+URL:		http://search.cpan.org/dist/String-Interpolate/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
